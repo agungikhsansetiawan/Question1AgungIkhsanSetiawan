@@ -1,4 +1,4 @@
-from math_function import add, mul, div
+from math_function import add, min, mul, div
 
 def main():
 
@@ -8,9 +8,11 @@ def main():
 
     if operator == "+":
         result = add(data_1, data_2)
-    if operator == "*":
+    elif operator == "-":
+        result = min(data_1, data_2)
+    elif operator == "*":
         result = mul(data_1, data_2)
-    if operator == "/":
+    elif operator == "/":
         result = div(data_1, data_2)
 
 
